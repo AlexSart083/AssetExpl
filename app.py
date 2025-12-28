@@ -395,70 +395,117 @@ CONTENT = {
                 "description": """
                 ### Solactive €STR +8.5 basis points Daily Index
                 
-                Il **Solactive €STR +8.5bp Daily** è un indice che fornisce il tasso €STR 
-                (Euro Short-Term Rate) più **8.5 basis points** (0.085%) annualizzati. 
-                Essenzialmente un investimento quasi-monetario utilizzato in prodotti assicurativi.
+                Il **Solactive €STR +8.5bp Daily** è un indice benchmark per ETF monetari che 
+                replicano il tasso overnight dell'Eurozona (€STR) con un piccolo spread positivo. 
+                Utilizzato in ETF come **Xtrackers EUR Overnight Rate Swap (XEON)**.
                 
                 #### Caratteristiche Principali:
-                - **Rendimento**: €STR + 0.085% annuo (8.5 basis points)
-                - **Tipologia**: Indice money market con premio minimo
-                - **Rischio**: Molto basso, simile a liquidità
-                - **Uso**: Prodotti assicurativi garantiti o semi-garantiti
+                - **Benchmark**: €STR + 8.5 basis points (0.085%)
+                - **Tipo**: Indice money market overnight
+                - **Uso**: ETF monetari per cash management
+                - **Liquidità**: Giornaliera (T+2)
                 
-                #### Cosa significa:
-                Se €STR è al 3.5%, questo indice renderebbe circa 3.585% annuo. È praticamente 
-                un investimento in liquidità con un piccolissimo extra. **NON è un prodotto 
-                ad alto rendimento** - il premio è solo 0.085% sopra il tasso risk-free.
+                #### Perché sceglierlo:
+                Ideale per parcheggiare liquidità a breve termine con rendimenti superiori al 
+                conto corrente tradizionale. Gli ETF che seguono questo indice (come XEON) offrono 
+                un'alternativa efficiente ai conti deposito con maggiore flessibilità e costi 
+                contenuti (TER tipico: 0.10-0.15%).
                 
-                #### Perché è usato:
-                Viene incorporato in polizze assicurative come componente conservativa o 
-                "garantita", non come motore di crescita del portfolio.
+                #### ETF Popolari:
+                - **XEON** - Xtrackers EUR Overnight Rate Swap UCITS ETF
+                - Ideale per tesoreria aziendale e gestione liquidità personale
                 """,
                 "risk_profile": {
                     "risk_level": "Molto Basso",
-                    "volatility": "Quasi nulla (<1% annua)",
-                    "time_horizon": "Breve-Medio (1-5 anni)",
-                    "return_potential": "€STR + 0.085% (es. ~3.6% se €STR = 3.5%)"
+                    "volatility": "Quasi nulla (<0.5% annua)",
+                    "time_horizon": "Breve termine (giorni/mesi)",
+                    "return_potential": "€STR + 0.085% (≈3.2-3.3% con €STR ≈3.15%)"
                 },
                 "composition": {
                     "geographic": {
                         "Eurozona": 100.0
                     },
                     "sectors": {
-                        "Strumenti Monetari": 100.0
+                        "Overnight Rate Swaps": 70.0,
+                        "Money Market": 20.0,
+                        "Cash Collateral": 10.0
                     }
                 },
                 "strategy": """
-                ### Comprendere €STR +8.5bp nei Prodotti Assicurativi
+                ### Come Utilizzare ETF €STR nel Portfolio
                 
-                #### 🎯 Cosa aspettarsi REALMENTE
-                - **Rendimento bassissimo**: Solo 0.085% sopra €STR (quasi liquidità)
-                - **Non è crescita**: È una componente conservativa/garantita
-                - **Costi critici**: Con TER/caricamenti >0.5%, vai in negativo reale
+                #### 🎯 Cash Management Efficiente
+                - **Parcheggio liquidità**: Alternativa a conti correnti/deposito
+                - **Flessibilità**: Liquidabile in T+2 (vs vincoli depositi)
+                - **Rendimento**: €STR + spread (attualmente ≈3.2-3.3%)
                 
-                #### 📊 Esempio Numerico
-                - €STR attuale: ~3.5%
-                - Rendimento indice: ~3.585%
-                - Costi polizza (tipici): 1.5-2.5%
-                - **Rendimento netto**: 1.0-2.0% (INFERIORE all'inflazione!)
+                #### 💰 Confronto con Alternative (Dicembre 2024)
                 
-                #### ⚖️ Alternative più Efficienti
-                - **Conto deposito**: 3-4% garantito, zero costi, liquidità immediata
-                - **ETF Obbligazionari breve termine**: Rendimenti simili, costi <0.15%
-                - **Buoni fruttiferi postali**: Garantiti dallo Stato, zero costi
+                **ETF Overnight (es. XEON)**:
+                - Rendimento: ≈3.2-3.3% lordo
+                - TER: 0.10-0.15%
+                - Liquidità: T+2
+                - Flessibilità: Alta
                 
-                #### ⚠️ ANALISI CRITICA
-                - **⚠️ RENDIMENTO MINIMO**: 8.5bp = 0.085% NON 8.5%!
-                - **⚠️ COSTI DEVASTANTI**: I costi polizza (1-2%) divorano tutto il rendimento
-                - **⚠️ ILLUSIONE**: Sembra "sicuro" ma i costi lo rendono inefficiente
-                - **⚠️ INFLAZIONE**: Rendimento reale probabile: NEGATIVO
-                - **✅ ALTERNATIVA**: Conto deposito vincolato rende 3-4x di più netto
-                - **✅ TRASPARENZA**: Preferisci strumenti semplici e a basso costo
+                **Conto Deposito Vincolato**:
+                - Rendimento: 3.0-3.8% lordo
+                - Costi: 0%
+                - Liquidità: Vincolato (3-12 mesi)
+                - Flessibilità: Bassa
                 
-                #### 💡 Quando ha senso
-                Praticamente **MAI** per l'investitore retail. È usato dalle compagnie 
-                assicurative per componenti "garantite" ma i costi rendono il netto 
-                molto inferiore a alternative semplici come conti deposito.
+                **Conto Corrente**:
+                - Rendimento: 0-0.5%
+                - Costi: Spesso canone mensile
+                - Liquidità: Immediata
+                - Flessibilità: Massima
+                
+                #### ⚖️ Quando Usare ETF €STR
+                
+                ✅ **IDEALE per**:
+                - Liquidità operativa (3-12 mesi) che vuoi remunerare
+                - Tesoreria aziendale
+                - Emergency fund con rendimento
+                - Transizione tra investimenti
+                - Alternativa a depositi non vincolati
+                
+                ❌ **NON ideale per**:
+                - Investimenti long-term (usa equity/obbligazioni)
+                - Liquidità <1 mese (troppo breve)
+                - Chi cerca massimo rendimento (vincolato rende di più)
+                
+                #### 📊 Strategia Pratica
+                
+                **Portfolio Bilanciato con Cash Buffer**:
+                - 60% MSCI World
+                - 30% Obbligazioni
+                - **10% ETF €STR** (liquidità di emergenza remunerata)
+                
+                **Gestione Liquidità Personale**:
+                - Spese correnti (1-2 mesi): Conto corrente
+                - **Emergency fund (3-6 mesi): ETF €STR**
+                - Investimenti LT: Equity/Bond ETF
+                
+                #### 💡 Vantaggi vs Svantaggi
+                
+                **Vantaggi**:
+                - ✅ Rendimento competitivo vs conti correnti
+                - ✅ Flessibilità (no vincoli temporali)
+                - ✅ Costi bassi (TER 0.10-0.15%)
+                - ✅ Liquidità alta (T+2)
+                - ✅ Segue automaticamente i tassi BCE
+                
+                **Svantaggi**:
+                - ⚠️ Rendimento inferiore a depositi vincolati lunghi
+                - ⚠️ Non immediato come conto corrente (T+2)
+                - ⚠️ Richiede broker/conto titoli
+                - ⚠️ Tassazione 26% su capital gains
+                
+                #### 🎓 Conclusione
+                
+                Gli ETF overnight €STR sono strumenti **legittimi ed efficienti** per cash 
+                management. Con TER dello 0.10-0.15%, offrono un buon compromesso tra 
+                rendimento, flessibilità e costi per chi vuole remunerare la liquidità 
+                senza vincoli temporali rigidi.
                 """
             },
             "msci_europe": {
@@ -987,70 +1034,117 @@ CONTENT = {
                 "description": """
                 ### Solactive €STR +8.5 basis points Daily Index
                 
-                The **Solactive €STR +8.5bp Daily** is an index that provides the €STR 
-                (Euro Short-Term Rate) plus **8.5 basis points** (0.085%) annualized. 
-                Essentially a quasi-money market investment used in insurance products.
+                The **Solactive €STR +8.5bp Daily** is a benchmark index for money market ETFs 
+                that replicate the Eurozone overnight rate (€STR) with a small positive spread. 
+                Used in ETFs like **Xtrackers EUR Overnight Rate Swap (XEON)**.
                 
                 #### Key Features:
-                - **Return**: €STR + 0.085% annual (8.5 basis points)
-                - **Type**: Money market index with minimal premium
-                - **Risk**: Very low, similar to cash
-                - **Use**: Guaranteed or semi-guaranteed insurance products
+                - **Benchmark**: €STR + 8.5 basis points (0.085%)
+                - **Type**: Overnight money market index
+                - **Use**: Money market ETFs for cash management
+                - **Liquidity**: Daily (T+2)
                 
-                #### What it means:
-                If €STR is at 3.5%, this index would return approximately 3.585% annually. 
-                It's essentially a cash investment with a tiny extra. **NOT a high-return 
-                product** - the premium is only 0.085% above the risk-free rate.
+                #### Why choose it:
+                Ideal for parking short-term liquidity with returns higher than traditional 
+                current accounts. ETFs tracking this index (like XEON) offer an efficient 
+                alternative to deposit accounts with greater flexibility and low costs 
+                (typical TER: 0.10-0.15%).
                 
-                #### Why it's used:
-                It's embedded in insurance policies as a conservative or "guaranteed" component, 
-                not as a portfolio growth driver.
+                #### Popular ETFs:
+                - **XEON** - Xtrackers EUR Overnight Rate Swap UCITS ETF
+                - Ideal for corporate treasury and personal cash management
                 """,
                 "risk_profile": {
                     "risk_level": "Very Low",
-                    "volatility": "Almost none (<1% annual)",
-                    "time_horizon": "Short-Medium (1-5 years)",
-                    "return_potential": "€STR + 0.085% (e.g. ~3.6% if €STR = 3.5%)"
+                    "volatility": "Almost none (<0.5% annual)",
+                    "time_horizon": "Short term (days/months)",
+                    "return_potential": "€STR + 0.085% (≈3.2-3.3% with €STR ≈3.15%)"
                 },
                 "composition": {
                     "geographic": {
                         "Eurozone": 100.0
                     },
                     "sectors": {
-                        "Money Market Instruments": 100.0
+                        "Overnight Rate Swaps": 70.0,
+                        "Money Market": 20.0,
+                        "Cash Collateral": 10.0
                     }
                 },
                 "strategy": """
-                ### Understanding €STR +8.5bp in Insurance Products
+                ### How to Use €STR ETFs in Your Portfolio
                 
-                #### 🎯 What to REALLY Expect
-                - **Minimal return**: Only 0.085% above €STR (almost cash)
-                - **Not growth**: It's a conservative/guaranteed component
-                - **Costs critical**: With TER/fees >0.5%, you go negative in real terms
+                #### 🎯 Efficient Cash Management
+                - **Parking liquidity**: Alternative to current/deposit accounts
+                - **Flexibility**: Liquidatable in T+2 (vs deposit lock-ins)
+                - **Return**: €STR + spread (currently ≈3.2-3.3%)
                 
-                #### 📊 Numerical Example
-                - Current €STR: ~3.5%
-                - Index return: ~3.585%
-                - Policy costs (typical): 1.5-2.5%
-                - **Net return**: 1.0-2.0% (BELOW inflation!)
+                #### 💰 Comparison with Alternatives (December 2024)
                 
-                #### ⚖️ More Efficient Alternatives
-                - **Deposit account**: 3-4% guaranteed, zero costs, immediate liquidity
-                - **Short-term bond ETFs**: Similar returns, costs <0.15%
-                - **Government savings bonds**: State-guaranteed, zero costs
+                **Overnight ETFs (e.g. XEON)**:
+                - Return: ≈3.2-3.3% gross
+                - TER: 0.10-0.15%
+                - Liquidity: T+2
+                - Flexibility: High
                 
-                #### ⚠️ CRITICAL ANALYSIS
-                - **⚠️ MINIMAL RETURN**: 8.5bp = 0.085% NOT 8.5%!
-                - **⚠️ DEVASTATING COSTS**: Policy fees (1-2%) eat all returns
-                - **⚠️ ILLUSION**: Seems "safe" but costs make it inefficient
-                - **⚠️ INFLATION**: Real return likely: NEGATIVE
-                - **✅ ALTERNATIVE**: Term deposit accounts yield 3-4x more net
-                - **✅ TRANSPARENCY**: Prefer simple, low-cost instruments
+                **Term Deposit Account**:
+                - Return: 3.0-3.8% gross
+                - Costs: 0%
+                - Liquidity: Locked (3-12 months)
+                - Flexibility: Low
                 
-                #### 💡 When it makes sense
-                Practically **NEVER** for retail investors. Used by insurance companies 
-                for "guaranteed" components but costs make net returns far inferior to 
-                simple alternatives like deposit accounts.
+                **Current Account**:
+                - Return: 0-0.5%
+                - Costs: Often monthly fees
+                - Liquidity: Immediate
+                - Flexibility: Maximum
+                
+                #### ⚖️ When to Use €STR ETFs
+                
+                ✅ **IDEAL for**:
+                - Operating liquidity (3-12 months) you want to remunerate
+                - Corporate treasury
+                - Emergency fund with return
+                - Transition between investments
+                - Alternative to non-term deposits
+                
+                ❌ **NOT ideal for**:
+                - Long-term investments (use equity/bonds)
+                - Liquidity <1 month (too short)
+                - Maximum return seekers (term deposits yield more)
+                
+                #### 📊 Practical Strategy
+                
+                **Balanced Portfolio with Cash Buffer**:
+                - 60% MSCI World
+                - 30% Bonds
+                - **10% €STR ETF** (remunerated emergency liquidity)
+                
+                **Personal Liquidity Management**:
+                - Current expenses (1-2 months): Current account
+                - **Emergency fund (3-6 months): €STR ETF**
+                - LT investments: Equity/Bond ETFs
+                
+                #### 💡 Advantages vs Disadvantages
+                
+                **Advantages**:
+                - ✅ Competitive return vs current accounts
+                - ✅ Flexibility (no time constraints)
+                - ✅ Low costs (TER 0.10-0.15%)
+                - ✅ High liquidity (T+2)
+                - ✅ Automatically follows ECB rates
+                
+                **Disadvantages**:
+                - ⚠️ Lower return than long-term deposits
+                - ⚠️ Not immediate like current account (T+2)
+                - ⚠️ Requires broker/securities account
+                - ⚠️ 26% capital gains tax
+                
+                #### 🎓 Conclusion
+                
+                Overnight €STR ETFs are **legitimate and efficient** cash management tools. 
+                With TER of 0.10-0.15%, they offer a good compromise between return, 
+                flexibility and costs for those wanting to remunerate liquidity without 
+                rigid time constraints.
                 """
             },
             "msci_europe": {
