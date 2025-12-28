@@ -391,65 +391,74 @@ CONTENT = {
                 """
             },
             "solactive_str": {
-                "name": "Solactive €STR +8.5% Daily",
+                "name": "Solactive €STR +8.5bp Daily",
                 "description": """
-                ### Solactive €STR +8.5% Daily Index
+                ### Solactive €STR +8.5 basis points Daily Index
                 
-                Il **Solactive €STR +8.5% Daily** è un indice sintetico che mira a fornire un 
-                rendimento del tasso €STR (Euro Short-Term Rate) più 8.5% annualizzato. 
-                Utilizzato principalmente in prodotti assicurativi italiani (polizze Unit-Linked).
+                Il **Solactive €STR +8.5bp Daily** è un indice che fornisce il tasso €STR 
+                (Euro Short-Term Rate) più **8.5 basis points** (0.085%) annualizzati. 
+                Essenzialmente un investimento quasi-monetario utilizzato in prodotti assicurativi.
                 
                 #### Caratteristiche Principali:
-                - **Target**: €STR + 8.5% annuo
-                - **Tipologia**: Indice sintetico a rendimento target
-                - **Sottostante**: Portafoglio dinamico multi-asset
-                - **Uso**: Prodotti assicurativi e risparmio gestito
+                - **Rendimento**: €STR + 0.085% annuo (8.5 basis points)
+                - **Tipologia**: Indice money market con premio minimo
+                - **Rischio**: Molto basso, simile a liquidità
+                - **Uso**: Prodotti assicurativi garantiti o semi-garantiti
                 
-                #### Perché sceglierlo:
-                Questo indice non è direttamente investibile via ETF tradizionali, ma è incorporato 
-                in polizze vita e fondi assicurativi. Il rendimento target dell'8.5% sopra il tasso 
-                risk-free lo rende attraente, ma comporta rischi significativi e costi elevati.
+                #### Cosa significa:
+                Se €STR è al 3.5%, questo indice renderebbe circa 3.585% annuo. È praticamente 
+                un investimento in liquidità con un piccolissimo extra. **NON è un prodotto 
+                ad alto rendimento** - il premio è solo 0.085% sopra il tasso risk-free.
+                
+                #### Perché è usato:
+                Viene incorporato in polizze assicurative come componente conservativa o 
+                "garantita", non come motore di crescita del portfolio.
                 """,
                 "risk_profile": {
-                    "risk_level": "Variabile (Medio-Alto)",
-                    "volatility": "Dipende dal sottostante (10-25%)",
-                    "time_horizon": "5-10+ anni",
-                    "return_potential": "€STR + 8.5% (target, non garantito)"
+                    "risk_level": "Molto Basso",
+                    "volatility": "Quasi nulla (<1% annua)",
+                    "time_horizon": "Breve-Medio (1-5 anni)",
+                    "return_potential": "€STR + 0.085% (es. ~3.6% se €STR = 3.5%)"
                 },
                 "composition": {
                     "geographic": {
-                        "Esposizione Globale": 60.0,
-                        "Europa": 25.0,
-                        "USA": 10.0,
-                        "Altri": 5.0
+                        "Eurozona": 100.0
                     },
                     "sectors": {
-                        "Azionario": 40.0,
-                        "Obbligazionario": 35.0,
-                        "Alternative": 15.0,
-                        "Liquidità": 10.0
+                        "Strumenti Monetari": 100.0
                     }
                 },
                 "strategy": """
-                ### Come Valutare Prodotti legati a €STR +8.5%
+                ### Comprendere €STR +8.5bp nei Prodotti Assicurativi
                 
-                #### 🎯 Attenzione ai Prodotti Assicurativi
-                - **Non è un ETF**: Disponibile solo tramite polizze unit-linked
-                - **Costi elevati**: Commissioni di gestione e caricamenti significativi
-                - **Rendimento non garantito**: Il target può non essere raggiunto
+                #### 🎯 Cosa aspettarsi REALMENTE
+                - **Rendimento bassissimo**: Solo 0.085% sopra €STR (quasi liquidità)
+                - **Non è crescita**: È una componente conservativa/garantita
+                - **Costi critici**: Con TER/caricamenti >0.5%, vai in negativo reale
                 
-                #### ⚖️ Alternative più Trasparenti
-                - **ETF Multi-Asset**: Maggiore trasparenza e costi inferiori
-                - **Portfolio 60/40**: Azionario globale + obbligazioni
-                - **Robo-Advisor**: Gestione automatica a costi contenuti
+                #### 📊 Esempio Numerico
+                - €STR attuale: ~3.5%
+                - Rendimento indice: ~3.585%
+                - Costi polizza (tipici): 1.5-2.5%
+                - **Rendimento netto**: 1.0-2.0% (INFERIORE all'inflazione!)
                 
-                #### ⚠️ CONSIDERAZIONI CRITICHE
-                - **⚠️ COSTI NASCOSTI**: Verifica sempre il TER totale e i caricamenti
-                - **⚠️ LIQUIDITÀ**: Vincoli temporali e penali di uscita anticipata
-                - **⚠️ RENDIMENTO TARGET**: Non è garantito, solo un obiettivo
-                - **⚠️ COMPLESSITÀ**: Struttura difficile da comprendere per investitori retail
-                - **✅ ALTERNATIVA**: Considera ETF bilanciati con costi <0.30% annui
-                - **✅ TRASPARENZA**: Preferisci strumenti quotati con prezzi real-time
+                #### ⚖️ Alternative più Efficienti
+                - **Conto deposito**: 3-4% garantito, zero costi, liquidità immediata
+                - **ETF Obbligazionari breve termine**: Rendimenti simili, costi <0.15%
+                - **Buoni fruttiferi postali**: Garantiti dallo Stato, zero costi
+                
+                #### ⚠️ ANALISI CRITICA
+                - **⚠️ RENDIMENTO MINIMO**: 8.5bp = 0.085% NON 8.5%!
+                - **⚠️ COSTI DEVASTANTI**: I costi polizza (1-2%) divorano tutto il rendimento
+                - **⚠️ ILLUSIONE**: Sembra "sicuro" ma i costi lo rendono inefficiente
+                - **⚠️ INFLAZIONE**: Rendimento reale probabile: NEGATIVO
+                - **✅ ALTERNATIVA**: Conto deposito vincolato rende 3-4x di più netto
+                - **✅ TRASPARENZA**: Preferisci strumenti semplici e a basso costo
+                
+                #### 💡 Quando ha senso
+                Praticamente **MAI** per l'investitore retail. È usato dalle compagnie 
+                assicurative per componenti "garantite" ma i costi rendono il netto 
+                molto inferiore a alternative semplici come conti deposito.
                 """
             },
             "msci_europe": {
@@ -974,65 +983,74 @@ CONTENT = {
                 """
             },
             "solactive_str": {
-                "name": "Solactive €STR +8.5% Daily",
+                "name": "Solactive €STR +8.5bp Daily",
                 "description": """
-                ### Solactive €STR +8.5% Daily Index
+                ### Solactive €STR +8.5 basis points Daily Index
                 
-                The **Solactive €STR +8.5% Daily** is a synthetic index aiming to provide a return 
-                of the €STR (Euro Short-Term Rate) plus 8.5% annualized. Primarily used in Italian 
-                insurance products (Unit-Linked policies).
+                The **Solactive €STR +8.5bp Daily** is an index that provides the €STR 
+                (Euro Short-Term Rate) plus **8.5 basis points** (0.085%) annualized. 
+                Essentially a quasi-money market investment used in insurance products.
                 
                 #### Key Features:
-                - **Target**: €STR + 8.5% annual
-                - **Type**: Synthetic target return index
-                - **Underlying**: Dynamic multi-asset portfolio
-                - **Use**: Insurance products and managed savings
+                - **Return**: €STR + 0.085% annual (8.5 basis points)
+                - **Type**: Money market index with minimal premium
+                - **Risk**: Very low, similar to cash
+                - **Use**: Guaranteed or semi-guaranteed insurance products
                 
-                #### Why consider it:
-                This index is not directly investable via traditional ETFs but is embedded in life 
-                insurance policies and insurance funds. The 8.5% target return above the risk-free 
-                rate makes it attractive, but carries significant risks and high costs.
+                #### What it means:
+                If €STR is at 3.5%, this index would return approximately 3.585% annually. 
+                It's essentially a cash investment with a tiny extra. **NOT a high-return 
+                product** - the premium is only 0.085% above the risk-free rate.
+                
+                #### Why it's used:
+                It's embedded in insurance policies as a conservative or "guaranteed" component, 
+                not as a portfolio growth driver.
                 """,
                 "risk_profile": {
-                    "risk_level": "Variable (Medium-High)",
-                    "volatility": "Depends on underlying (10-25%)",
-                    "time_horizon": "5-10+ years",
-                    "return_potential": "€STR + 8.5% (target, not guaranteed)"
+                    "risk_level": "Very Low",
+                    "volatility": "Almost none (<1% annual)",
+                    "time_horizon": "Short-Medium (1-5 years)",
+                    "return_potential": "€STR + 0.085% (e.g. ~3.6% if €STR = 3.5%)"
                 },
                 "composition": {
                     "geographic": {
-                        "Global Exposure": 60.0,
-                        "Europe": 25.0,
-                        "USA": 10.0,
-                        "Others": 5.0
+                        "Eurozone": 100.0
                     },
                     "sectors": {
-                        "Equity": 40.0,
-                        "Fixed Income": 35.0,
-                        "Alternatives": 15.0,
-                        "Cash": 10.0
+                        "Money Market Instruments": 100.0
                     }
                 },
                 "strategy": """
-                ### How to Evaluate €STR +8.5% Products
+                ### Understanding €STR +8.5bp in Insurance Products
                 
-                #### 🎯 Beware of Insurance Products
-                - **Not an ETF**: Only available through unit-linked policies
-                - **High costs**: Significant management fees and loadings
-                - **Return not guaranteed**: Target may not be achieved
+                #### 🎯 What to REALLY Expect
+                - **Minimal return**: Only 0.085% above €STR (almost cash)
+                - **Not growth**: It's a conservative/guaranteed component
+                - **Costs critical**: With TER/fees >0.5%, you go negative in real terms
                 
-                #### ⚖️ More Transparent Alternatives
-                - **Multi-Asset ETFs**: Greater transparency and lower costs
-                - **60/40 Portfolio**: Global equity + bonds
-                - **Robo-Advisors**: Automatic management at contained costs
+                #### 📊 Numerical Example
+                - Current €STR: ~3.5%
+                - Index return: ~3.585%
+                - Policy costs (typical): 1.5-2.5%
+                - **Net return**: 1.0-2.0% (BELOW inflation!)
                 
-                #### ⚠️ CRITICAL CONSIDERATIONS
-                - **⚠️ HIDDEN COSTS**: Always verify total TER and loadings
-                - **⚠️ LIQUIDITY**: Time constraints and early exit penalties
-                - **⚠️ TARGET RETURN**: Not guaranteed, only an objective
-                - **⚠️ COMPLEXITY**: Difficult structure for retail investors to understand
-                - **✅ ALTERNATIVE**: Consider balanced ETFs with costs <0.30% annual
-                - **✅ TRANSPARENCY**: Prefer listed instruments with real-time pricing
+                #### ⚖️ More Efficient Alternatives
+                - **Deposit account**: 3-4% guaranteed, zero costs, immediate liquidity
+                - **Short-term bond ETFs**: Similar returns, costs <0.15%
+                - **Government savings bonds**: State-guaranteed, zero costs
+                
+                #### ⚠️ CRITICAL ANALYSIS
+                - **⚠️ MINIMAL RETURN**: 8.5bp = 0.085% NOT 8.5%!
+                - **⚠️ DEVASTATING COSTS**: Policy fees (1-2%) eat all returns
+                - **⚠️ ILLUSION**: Seems "safe" but costs make it inefficient
+                - **⚠️ INFLATION**: Real return likely: NEGATIVE
+                - **✅ ALTERNATIVE**: Term deposit accounts yield 3-4x more net
+                - **✅ TRANSPARENCY**: Prefer simple, low-cost instruments
+                
+                #### 💡 When it makes sense
+                Practically **NEVER** for retail investors. Used by insurance companies 
+                for "guaranteed" components but costs make net returns far inferior to 
+                simple alternatives like deposit accounts.
                 """
             },
             "msci_europe": {
