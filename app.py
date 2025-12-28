@@ -1,6 +1,7 @@
 """
 AssetExpl - ETF Explorer Web App
 Educational app for exploring ETF indices with multilingual support
+Version 2.0 - Extended with 8 major indices
 """
 
 import streamlit as st
@@ -241,6 +242,359 @@ CONTENT = {
                 - **Concentrazione Asia**: ~75% in mercati asiatici
                 - **Opportunità**: Crescita demografica e espansione classe media
                 """
+            },
+            "msci_acwi": {
+                "name": "MSCI ACWI",
+                "description": """
+                ### MSCI All Country World Index (ACWI)
+                
+                L'**MSCI ACWI** è l'indice più completo per l'equity globale, combinando mercati 
+                sviluppati ed emergenti. Rappresenta il 99% dell'opportunità di investimento 
+                azionario globale.
+                
+                #### Caratteristiche Principali:
+                - **Copertura**: 23 mercati sviluppati + 24 mercati emergenti
+                - **Numero titoli**: ~3,000 azioni
+                - **Capitalizzazione**: Large e Mid-cap
+                - **Benchmark**: Il più completo indice azionario globale
+                
+                #### Perché sceglierlo:
+                L'MSCI ACWI è la soluzione "one-stop-shop" per l'equity globale. Con una singola 
+                posizione ottieni esposizione bilanciata a mercati sviluppati (~85%) ed emergenti 
+                (~15%), eliminando la necessità di combinare più indici.
+                """,
+                "risk_profile": {
+                    "risk_level": "Medio-Alto",
+                    "volatility": "16-21% annua",
+                    "time_horizon": "7-10+ anni",
+                    "return_potential": "7-10% annuo storico"
+                },
+                "composition": {
+                    "geographic": {
+                        "USA": 62.3,
+                        "Giappone": 5.4,
+                        "Regno Unito": 3.6,
+                        "Cina": 3.2,
+                        "Francia": 3.0,
+                        "Canada": 2.8,
+                        "India": 2.1,
+                        "Taiwan": 1.9,
+                        "Svizzera": 2.4,
+                        "Altri": 13.3
+                    },
+                    "sectors": {
+                        "Tecnologia": 23.8,
+                        "Finanza": 15.6,
+                        "Salute": 11.9,
+                        "Beni Ciclici": 11.5,
+                        "Industria": 10.2,
+                        "Beni di Consumo": 7.4,
+                        "Servizi Comunicazione": 7.1,
+                        "Energia": 4.7,
+                        "Materiali": 4.3,
+                        "Altri": 3.5
+                    }
+                },
+                "strategy": """
+                ### Come Utilizzare MSCI ACWI nel tuo Portfolio
+                
+                #### 🎯 Strategia "All-in-One"
+                - **Portafoglio Semplificato**: MSCI ACWI come unico ETF equity (60-100%)
+                - **Gestione Passiva**: Perfetto per approccio "set and forget"
+                - **Ribilanciamento Automatico**: L'indice si aggiusta automaticamente tra DM e EM
+                
+                #### ⚖️ Combinazioni Efficaci
+                - **MSCI ACWI (80%) + Obbligazioni (20%)**: Portfolio globale semplice
+                - **MSCI ACWI (70%) + Obbligazioni (25%) + Oro (5%)**: Protezione inflazione
+                - **MSCI ACWI (90%) + Small Cap (10%)**: Massima equity exposure
+                
+                #### ⚠️ Considerazioni
+                - **Vantaggio principale**: Massima diversificazione in un solo ETF
+                - **Esposizione USA**: Ancora dominante (~62%)
+                - **EM inclusi**: Non serve combinare con MSCI EM
+                - **TER leggermente superiore**: Rispetto a MSCI World per via degli EM
+                - **Ideale per principianti**: Semplicità gestionale massima
+                """
+            },
+            "ftse_all_world": {
+                "name": "FTSE All-World",
+                "description": """
+                ### FTSE All-World Index
+                
+                Il **FTSE All-World Index** è l'alternativa di FTSE all'MSCI ACWI, offrendo 
+                esposizione completa a mercati sviluppati ed emergenti con una copertura ancora 
+                più ampia.
+                
+                #### Caratteristiche Principali:
+                - **Copertura**: 49 paesi (25 sviluppati + 24 emergenti)
+                - **Numero titoli**: ~4,000 azioni
+                - **Capitalizzazione**: Large, Mid e Small-cap
+                - **Benchmark**: Alternativa completa all'MSCI ACWI
+                
+                #### Perché sceglierlo:
+                FTSE All-World include anche le small-cap, offrendo una copertura del 98% del 
+                mercato azionario globale investibile. È la scelta preferita per chi cerca la 
+                massima diversificazione possibile in un singolo strumento.
+                """,
+                "risk_profile": {
+                    "risk_level": "Medio-Alto",
+                    "volatility": "16-22% annua",
+                    "time_horizon": "7-10+ anni",
+                    "return_potential": "7-10% annuo storico"
+                },
+                "composition": {
+                    "geographic": {
+                        "USA": 61.8,
+                        "Giappone": 5.6,
+                        "Regno Unito": 3.8,
+                        "Cina": 3.4,
+                        "Canada": 3.1,
+                        "Francia": 2.9,
+                        "Svizzera": 2.5,
+                        "Germania": 2.3,
+                        "India": 2.2,
+                        "Taiwan": 1.9,
+                        "Altri": 10.5
+                    },
+                    "sectors": {
+                        "Tecnologia": 24.1,
+                        "Finanza": 15.3,
+                        "Beni Ciclici": 11.8,
+                        "Salute": 11.6,
+                        "Industria": 10.4,
+                        "Beni di Consumo": 7.2,
+                        "Servizi Comunicazione": 6.9,
+                        "Energia": 4.6,
+                        "Materiali": 4.2,
+                        "Altri": 3.9
+                    }
+                },
+                "strategy": """
+                ### Come Utilizzare FTSE All-World nel tuo Portfolio
+                
+                #### 🎯 Strategia Massima Diversificazione
+                - **Portfolio Completo**: FTSE All-World come unico ETF equity necessario
+                - **Inclusione Small-Cap**: Cattura opportunità anche in aziende più piccole
+                - **Buy & Hold**: Ideale per investitori passivi a lungo termine
+                
+                #### ⚖️ Combinazioni Efficaci
+                - **FTSE All-World (80%) + Obbligazioni Globali (20%)**: Semplicità massima
+                - **FTSE All-World (70%) + Bonds (20%) + Oro (10%)**: Portfolio resiliente
+                - **FTSE All-World (100%)**: Opzione 100% equity per profili aggressivi
+                
+                #### ⚠️ Considerazioni
+                - **Copertura superiore**: Include small-cap (vs MSCI ACWI)
+                - **4,000+ titoli**: Massima diversificazione disponibile
+                - **Alternativa MSCI**: Metodologia leggermente diversa ma risultati simili
+                - **Liquidità ETF**: Verificare gli spread bid-ask
+                - **Perfetto per "Lazy Portfolio"**: Soluzione completa in un solo ETF
+                """
+            },
+            "solactive_str": {
+                "name": "Solactive €STR +8.5% Daily",
+                "description": """
+                ### Solactive €STR +8.5% Daily Index
+                
+                Il **Solactive €STR +8.5% Daily** è un indice sintetico che mira a fornire un 
+                rendimento del tasso €STR (Euro Short-Term Rate) più 8.5% annualizzato. 
+                Utilizzato principalmente in prodotti assicurativi italiani (polizze Unit-Linked).
+                
+                #### Caratteristiche Principali:
+                - **Target**: €STR + 8.5% annuo
+                - **Tipologia**: Indice sintetico a rendimento target
+                - **Sottostante**: Portafoglio dinamico multi-asset
+                - **Uso**: Prodotti assicurativi e risparmio gestito
+                
+                #### Perché sceglierlo:
+                Questo indice non è direttamente investibile via ETF tradizionali, ma è incorporato 
+                in polizze vita e fondi assicurativi. Il rendimento target dell'8.5% sopra il tasso 
+                risk-free lo rende attraente, ma comporta rischi significativi e costi elevati.
+                """,
+                "risk_profile": {
+                    "risk_level": "Variabile (Medio-Alto)",
+                    "volatility": "Dipende dal sottostante (10-25%)",
+                    "time_horizon": "5-10+ anni",
+                    "return_potential": "€STR + 8.5% (target, non garantito)"
+                },
+                "composition": {
+                    "geographic": {
+                        "Esposizione Globale": 60.0,
+                        "Europa": 25.0,
+                        "USA": 10.0,
+                        "Altri": 5.0
+                    },
+                    "sectors": {
+                        "Azionario": 40.0,
+                        "Obbligazionario": 35.0,
+                        "Alternative": 15.0,
+                        "Liquidità": 10.0
+                    }
+                },
+                "strategy": """
+                ### Come Valutare Prodotti legati a €STR +8.5%
+                
+                #### 🎯 Attenzione ai Prodotti Assicurativi
+                - **Non è un ETF**: Disponibile solo tramite polizze unit-linked
+                - **Costi elevati**: Commissioni di gestione e caricamenti significativi
+                - **Rendimento non garantito**: Il target può non essere raggiunto
+                
+                #### ⚖️ Alternative più Trasparenti
+                - **ETF Multi-Asset**: Maggiore trasparenza e costi inferiori
+                - **Portfolio 60/40**: Azionario globale + obbligazioni
+                - **Robo-Advisor**: Gestione automatica a costi contenuti
+                
+                #### ⚠️ CONSIDERAZIONI CRITICHE
+                - **⚠️ COSTI NASCOSTI**: Verifica sempre il TER totale e i caricamenti
+                - **⚠️ LIQUIDITÀ**: Vincoli temporali e penali di uscita anticipata
+                - **⚠️ RENDIMENTO TARGET**: Non è garantito, solo un obiettivo
+                - **⚠️ COMPLESSITÀ**: Struttura difficile da comprendere per investitori retail
+                - **✅ ALTERNATIVA**: Considera ETF bilanciati con costi <0.30% annui
+                - **✅ TRASPARENZA**: Preferisci strumenti quotati con prezzi real-time
+                """
+            },
+            "msci_europe": {
+                "name": "MSCI Europe",
+                "description": """
+                ### MSCI Europe Index
+                
+                L'**MSCI Europe Index** rappresenta le large e mid-cap di 15 paesi europei 
+                sviluppati, offrendo esposizione concentrata al mercato azionario europeo.
+                
+                #### Caratteristiche Principali:
+                - **Copertura**: 15 paesi europei sviluppati
+                - **Numero titoli**: ~430 azioni
+                - **Capitalizzazione**: Large e Mid-cap
+                - **Benchmark**: Standard per equity europea
+                
+                #### Perché sceglierlo:
+                MSCI Europe è ideale per chi vuole esposizione all'Europa sviluppata, includendo 
+                sia paesi dell'Eurozona che UK, Svizzera, e paesi nordici. Offre accesso a 
+                leader globali in settori come lusso, farmaceutico, automotive e finanziario.
+                """,
+                "risk_profile": {
+                    "risk_level": "Medio",
+                    "volatility": "14-19% annua",
+                    "time_horizon": "7-10+ anni",
+                    "return_potential": "6-8% annuo storico"
+                },
+                "composition": {
+                    "geographic": {
+                        "Regno Unito": 23.5,
+                        "Francia": 19.2,
+                        "Svizzera": 16.8,
+                        "Germania": 14.3,
+                        "Paesi Bassi": 7.2,
+                        "Svezia": 5.8,
+                        "Danimarca": 4.1,
+                        "Spagna": 3.9,
+                        "Italia": 3.2,
+                        "Altri": 2.0
+                    },
+                    "sectors": {
+                        "Finanza": 18.4,
+                        "Salute": 16.2,
+                        "Industria": 14.8,
+                        "Beni Ciclici": 12.1,
+                        "Beni di Consumo": 10.9,
+                        "Tecnologia": 8.3,
+                        "Energia": 6.7,
+                        "Materiali": 5.9,
+                        "Utilities": 4.2,
+                        "Altri": 2.5
+                    }
+                },
+                "strategy": """
+                ### Come Utilizzare MSCI Europe nel tuo Portfolio
+                
+                #### 🎯 Strategia Regional Focus
+                - **Esposizione Europa**: Ideale per ridurre dipendenza USA
+                - **Diversificazione Geografica**: Complementa S&P 500 o Nasdaq
+                - **Valutazioni Attraenti**: Storicamente più economico rispetto a USA
+                
+                #### ⚖️ Combinazioni Efficaci
+                - **S&P 500 (50%) + MSCI Europe (30%) + MSCI EM (20%)**: Globale bilanciato
+                - **MSCI Europe (60%) + MSCI USA (30%) + Bonds (10%)**: Riduzione home bias USA
+                - **MSCI Europe (40%) + MSCI World (40%) + Bonds (20%)**: Tilt europeo
+                
+                #### ⚠️ Considerazioni
+                - **Crescita inferiore a USA**: Storicamente rendimenti più bassi
+                - **Include UK**: Circa 24% in aziende britanniche
+                - **Focus Value**: Meno tech, più finanza e industria
+                - **Diversificazione valutaria**: Esposizione GBP, CHF, EUR
+                - **Opportunità**: Valutazioni più basse possono offrire potenziale upside
+                """
+            },
+            "msci_emu": {
+                "name": "MSCI EMU",
+                "description": """
+                ### MSCI EMU Index (European Monetary Union)
+                
+                L'**MSCI EMU Index** rappresenta le large e mid-cap dei paesi dell'Eurozona, 
+                offrendo esposizione pura ai mercati che utilizzano l'Euro come valuta.
+                
+                #### Caratteristiche Principali:
+                - **Copertura**: 10 paesi dell'Eurozona
+                - **Numero titoli**: ~240 azioni
+                - **Capitalizzazione**: Large e Mid-cap
+                - **Benchmark**: Standard per equity Eurozona
+                
+                #### Perché sceglierlo:
+                MSCI EMU elimina il rischio valutario per investitori europei, concentrandosi 
+                esclusivamente su paesi che usano l'Euro. Ideale per chi vuole esposizione 
+                all'Eurozona senza l'influenza di UK e Svizzera.
+                """,
+                "risk_profile": {
+                    "risk_level": "Medio",
+                    "volatility": "15-20% annua",
+                    "time_horizon": "7-10+ anni",
+                    "return_potential": "5-8% annuo storico"
+                },
+                "composition": {
+                    "geographic": {
+                        "Francia": 35.8,
+                        "Germania": 27.2,
+                        "Paesi Bassi": 13.4,
+                        "Spagna": 8.9,
+                        "Italia": 7.6,
+                        "Irlanda": 3.2,
+                        "Belgio": 2.1,
+                        "Finlandia": 1.2,
+                        "Altri": 0.6
+                    },
+                    "sectors": {
+                        "Finanza": 17.8,
+                        "Industria": 16.4,
+                        "Salute": 14.2,
+                        "Beni Ciclici": 13.6,
+                        "Beni di Consumo": 11.8,
+                        "Tecnologia": 9.3,
+                        "Energia": 5.9,
+                        "Materiali": 5.7,
+                        "Utilities": 3.8,
+                        "Altri": 1.5
+                    }
+                },
+                "strategy": """
+                ### Come Utilizzare MSCI EMU nel tuo Portfolio
+                
+                #### 🎯 Strategia Eurozona
+                - **No Rischio Cambio**: Ideale per investitori italiani/europei
+                - **Home Region Bias**: Investire nella propria area geografica
+                - **Accumulo EUR**: Esposizione 100% in Euro
+                
+                #### ⚖️ Combinazioni Efficaci
+                - **MSCI EMU (40%) + S&P 500 (40%) + Bonds EUR (20%)**: Bilanciato EUR-USA
+                - **MSCI EMU (60%) + MSCI World ex-EMU (30%) + Bonds (10%)**: Tilt Eurozona
+                - **MSCI EMU (50%) + MSCI EM (20%) + Bonds (30%)**: Diversificazione completa
+                
+                #### ⚠️ Considerazioni
+                - **Esclude UK e Svizzera**: Elimina 2 dei maggiori mercati europei
+                - **Concentrazione Francia-Germania**: ~63% del peso totale
+                - **Meno tech**: Sottopesato in tecnologia rispetto a indici globali
+                - **Rischio politico UE**: Esposto a dinamiche politiche dell'Eurozona
+                - **Per investitori EUR**: Elimina rischio cambio ma riduce diversificazione
+                - **Valutazioni**: Generalmente più convenienti rispetto a mercati USA
+                """
             }
         },
         "metrics_labels": {
@@ -473,6 +827,357 @@ CONTENT = {
                 - **Asia concentration**: ~75% in Asian markets
                 - **Opportunities**: Demographic growth and middle class expansion
                 """
+            },
+            "msci_acwi": {
+                "name": "MSCI ACWI",
+                "description": """
+                ### MSCI All Country World Index (ACWI)
+                
+                The **MSCI ACWI** is the most comprehensive global equity index, combining developed 
+                and emerging markets. It represents 99% of the global investable equity opportunity.
+                
+                #### Key Features:
+                - **Coverage**: 23 developed + 24 emerging markets
+                - **Number of stocks**: ~3,000 companies
+                - **Capitalization**: Large and Mid-cap
+                - **Benchmark**: Most complete global equity index
+                
+                #### Why choose it:
+                MSCI ACWI is the "one-stop-shop" solution for global equity. With a single position 
+                you get balanced exposure to developed (~85%) and emerging (~15%) markets, 
+                eliminating the need to combine multiple indices.
+                """,
+                "risk_profile": {
+                    "risk_level": "Medium-High",
+                    "volatility": "16-21% annual",
+                    "time_horizon": "7-10+ years",
+                    "return_potential": "7-10% historical annual"
+                },
+                "composition": {
+                    "geographic": {
+                        "USA": 62.3,
+                        "Japan": 5.4,
+                        "United Kingdom": 3.6,
+                        "China": 3.2,
+                        "France": 3.0,
+                        "Canada": 2.8,
+                        "India": 2.1,
+                        "Taiwan": 1.9,
+                        "Switzerland": 2.4,
+                        "Others": 13.3
+                    },
+                    "sectors": {
+                        "Technology": 23.8,
+                        "Finance": 15.6,
+                        "Healthcare": 11.9,
+                        "Consumer Cyclical": 11.5,
+                        "Industrials": 10.2,
+                        "Consumer Staples": 7.4,
+                        "Communication Services": 7.1,
+                        "Energy": 4.7,
+                        "Materials": 4.3,
+                        "Others": 3.5
+                    }
+                },
+                "strategy": """
+                ### How to Use MSCI ACWI in Your Portfolio
+                
+                #### 🎯 "All-in-One" Strategy
+                - **Simplified Portfolio**: MSCI ACWI as single equity ETF (60-100%)
+                - **Passive Management**: Perfect for "set and forget" approach
+                - **Automatic Rebalancing**: Index auto-adjusts between DM and EM
+                
+                #### ⚖️ Effective Combinations
+                - **MSCI ACWI (80%) + Bonds (20%)**: Simple global portfolio
+                - **MSCI ACWI (70%) + Bonds (25%) + Gold (5%)**: Inflation protection
+                - **MSCI ACWI (90%) + Small Cap (10%)**: Maximum equity exposure
+                
+                #### ⚠️ Considerations
+                - **Main advantage**: Maximum diversification in one ETF
+                - **US exposure**: Still dominant (~62%)
+                - **EM included**: No need to combine with MSCI EM
+                - **Slightly higher TER**: Compared to MSCI World due to EM inclusion
+                - **Ideal for beginners**: Maximum management simplicity
+                """
+            },
+            "ftse_all_world": {
+                "name": "FTSE All-World",
+                "description": """
+                ### FTSE All-World Index
+                
+                The **FTSE All-World Index** is FTSE's alternative to MSCI ACWI, offering 
+                comprehensive exposure to developed and emerging markets with even broader coverage.
+                
+                #### Key Features:
+                - **Coverage**: 49 countries (25 developed + 24 emerging)
+                - **Number of stocks**: ~4,000 companies
+                - **Capitalization**: Large, Mid and Small-cap
+                - **Benchmark**: Comprehensive alternative to MSCI ACWI
+                
+                #### Why choose it:
+                FTSE All-World also includes small-caps, providing coverage of 98% of the global 
+                investable equity market. The preferred choice for those seeking maximum 
+                diversification in a single instrument.
+                """,
+                "risk_profile": {
+                    "risk_level": "Medium-High",
+                    "volatility": "16-22% annual",
+                    "time_horizon": "7-10+ years",
+                    "return_potential": "7-10% historical annual"
+                },
+                "composition": {
+                    "geographic": {
+                        "USA": 61.8,
+                        "Japan": 5.6,
+                        "United Kingdom": 3.8,
+                        "China": 3.4,
+                        "Canada": 3.1,
+                        "France": 2.9,
+                        "Switzerland": 2.5,
+                        "Germany": 2.3,
+                        "India": 2.2,
+                        "Taiwan": 1.9,
+                        "Others": 10.5
+                    },
+                    "sectors": {
+                        "Technology": 24.1,
+                        "Finance": 15.3,
+                        "Consumer Cyclical": 11.8,
+                        "Healthcare": 11.6,
+                        "Industrials": 10.4,
+                        "Consumer Staples": 7.2,
+                        "Communication Services": 6.9,
+                        "Energy": 4.6,
+                        "Materials": 4.2,
+                        "Others": 3.9
+                    }
+                },
+                "strategy": """
+                ### How to Use FTSE All-World in Your Portfolio
+                
+                #### 🎯 Maximum Diversification Strategy
+                - **Complete Portfolio**: FTSE All-World as only equity ETF needed
+                - **Small-Cap Inclusion**: Captures opportunities in smaller companies too
+                - **Buy & Hold**: Ideal for long-term passive investors
+                
+                #### ⚖️ Effective Combinations
+                - **FTSE All-World (80%) + Global Bonds (20%)**: Maximum simplicity
+                - **FTSE All-World (70%) + Bonds (20%) + Gold (10%)**: Resilient portfolio
+                - **FTSE All-World (100%)**: 100% equity option for aggressive profiles
+                
+                #### ⚠️ Considerations
+                - **Superior coverage**: Includes small-cap (vs MSCI ACWI)
+                - **4,000+ holdings**: Maximum available diversification
+                - **MSCI alternative**: Slightly different methodology but similar results
+                - **ETF liquidity**: Check bid-ask spreads
+                - **Perfect for "Lazy Portfolio"**: Complete solution in one ETF
+                """
+            },
+            "solactive_str": {
+                "name": "Solactive €STR +8.5% Daily",
+                "description": """
+                ### Solactive €STR +8.5% Daily Index
+                
+                The **Solactive €STR +8.5% Daily** is a synthetic index aiming to provide a return 
+                of the €STR (Euro Short-Term Rate) plus 8.5% annualized. Primarily used in Italian 
+                insurance products (Unit-Linked policies).
+                
+                #### Key Features:
+                - **Target**: €STR + 8.5% annual
+                - **Type**: Synthetic target return index
+                - **Underlying**: Dynamic multi-asset portfolio
+                - **Use**: Insurance products and managed savings
+                
+                #### Why consider it:
+                This index is not directly investable via traditional ETFs but is embedded in life 
+                insurance policies and insurance funds. The 8.5% target return above the risk-free 
+                rate makes it attractive, but carries significant risks and high costs.
+                """,
+                "risk_profile": {
+                    "risk_level": "Variable (Medium-High)",
+                    "volatility": "Depends on underlying (10-25%)",
+                    "time_horizon": "5-10+ years",
+                    "return_potential": "€STR + 8.5% (target, not guaranteed)"
+                },
+                "composition": {
+                    "geographic": {
+                        "Global Exposure": 60.0,
+                        "Europe": 25.0,
+                        "USA": 10.0,
+                        "Others": 5.0
+                    },
+                    "sectors": {
+                        "Equity": 40.0,
+                        "Fixed Income": 35.0,
+                        "Alternatives": 15.0,
+                        "Cash": 10.0
+                    }
+                },
+                "strategy": """
+                ### How to Evaluate €STR +8.5% Products
+                
+                #### 🎯 Beware of Insurance Products
+                - **Not an ETF**: Only available through unit-linked policies
+                - **High costs**: Significant management fees and loadings
+                - **Return not guaranteed**: Target may not be achieved
+                
+                #### ⚖️ More Transparent Alternatives
+                - **Multi-Asset ETFs**: Greater transparency and lower costs
+                - **60/40 Portfolio**: Global equity + bonds
+                - **Robo-Advisors**: Automatic management at contained costs
+                
+                #### ⚠️ CRITICAL CONSIDERATIONS
+                - **⚠️ HIDDEN COSTS**: Always verify total TER and loadings
+                - **⚠️ LIQUIDITY**: Time constraints and early exit penalties
+                - **⚠️ TARGET RETURN**: Not guaranteed, only an objective
+                - **⚠️ COMPLEXITY**: Difficult structure for retail investors to understand
+                - **✅ ALTERNATIVE**: Consider balanced ETFs with costs <0.30% annual
+                - **✅ TRANSPARENCY**: Prefer listed instruments with real-time pricing
+                """
+            },
+            "msci_europe": {
+                "name": "MSCI Europe",
+                "description": """
+                ### MSCI Europe Index
+                
+                The **MSCI Europe Index** represents large and mid-cap stocks from 15 developed 
+                European countries, offering concentrated exposure to the European equity market.
+                
+                #### Key Features:
+                - **Coverage**: 15 developed European countries
+                - **Number of stocks**: ~430 companies
+                - **Capitalization**: Large and Mid-cap
+                - **Benchmark**: Standard for European equity
+                
+                #### Why choose it:
+                MSCI Europe is ideal for those seeking exposure to developed Europe, including both 
+                Eurozone countries and UK, Switzerland, and Nordic countries. Provides access to 
+                global leaders in sectors like luxury, pharmaceuticals, automotive, and finance.
+                """,
+                "risk_profile": {
+                    "risk_level": "Medium",
+                    "volatility": "14-19% annual",
+                    "time_horizon": "7-10+ years",
+                    "return_potential": "6-8% historical annual"
+                },
+                "composition": {
+                    "geographic": {
+                        "United Kingdom": 23.5,
+                        "France": 19.2,
+                        "Switzerland": 16.8,
+                        "Germany": 14.3,
+                        "Netherlands": 7.2,
+                        "Sweden": 5.8,
+                        "Denmark": 4.1,
+                        "Spain": 3.9,
+                        "Italy": 3.2,
+                        "Others": 2.0
+                    },
+                    "sectors": {
+                        "Finance": 18.4,
+                        "Healthcare": 16.2,
+                        "Industrials": 14.8,
+                        "Consumer Cyclical": 12.1,
+                        "Consumer Staples": 10.9,
+                        "Technology": 8.3,
+                        "Energy": 6.7,
+                        "Materials": 5.9,
+                        "Utilities": 4.2,
+                        "Others": 2.5
+                    }
+                },
+                "strategy": """
+                ### How to Use MSCI Europe in Your Portfolio
+                
+                #### 🎯 Regional Focus Strategy
+                - **Europe Exposure**: Ideal for reducing US dependency
+                - **Geographic Diversification**: Complements S&P 500 or Nasdaq
+                - **Attractive Valuations**: Historically cheaper than US
+                
+                #### ⚖️ Effective Combinations
+                - **S&P 500 (50%) + MSCI Europe (30%) + MSCI EM (20%)**: Balanced global
+                - **MSCI Europe (60%) + MSCI USA (30%) + Bonds (10%)**: Reduce US home bias
+                - **MSCI Europe (40%) + MSCI World (40%) + Bonds (20%)**: European tilt
+                
+                #### ⚠️ Considerations
+                - **Lower growth than US**: Historically lower returns
+                - **Includes UK**: About 24% in British companies
+                - **Value focus**: Less tech, more finance and industrials
+                - **Currency diversification**: Exposure to GBP, CHF, EUR
+                - **Opportunity**: Lower valuations may offer upside potential
+                """
+            },
+            "msci_emu": {
+                "name": "MSCI EMU",
+                "description": """
+                ### MSCI EMU Index (European Monetary Union)
+                
+                The **MSCI EMU Index** represents large and mid-cap stocks from Eurozone countries, 
+                offering pure exposure to markets using the Euro as currency.
+                
+                #### Key Features:
+                - **Coverage**: 10 Eurozone countries
+                - **Number of stocks**: ~240 companies
+                - **Capitalization**: Large and Mid-cap
+                - **Benchmark**: Standard for Eurozone equity
+                
+                #### Why choose it:
+                MSCI EMU eliminates currency risk for European investors, focusing exclusively on 
+                countries using the Euro. Ideal for those wanting Eurozone exposure without the 
+                influence of UK and Switzerland.
+                """,
+                "risk_profile": {
+                    "risk_level": "Medium",
+                    "volatility": "15-20% annual",
+                    "time_horizon": "7-10+ years",
+                    "return_potential": "5-8% historical annual"
+                },
+                "composition": {
+                    "geographic": {
+                        "France": 35.8,
+                        "Germany": 27.2,
+                        "Netherlands": 13.4,
+                        "Spain": 8.9,
+                        "Italy": 7.6,
+                        "Ireland": 3.2,
+                        "Belgium": 2.1,
+                        "Finland": 1.2,
+                        "Others": 0.6
+                    },
+                    "sectors": {
+                        "Finance": 17.8,
+                        "Industrials": 16.4,
+                        "Healthcare": 14.2,
+                        "Consumer Cyclical": 13.6,
+                        "Consumer Staples": 11.8,
+                        "Technology": 9.3,
+                        "Energy": 5.9,
+                        "Materials": 5.7,
+                        "Utilities": 3.8,
+                        "Others": 1.5
+                    }
+                },
+                "strategy": """
+                ### How to Use MSCI EMU in Your Portfolio
+                
+                #### 🎯 Eurozone Strategy
+                - **No Currency Risk**: Ideal for Italian/European investors
+                - **Home Region Bias**: Invest in your own geographic area
+                - **EUR Accumulation**: 100% Euro exposure
+                
+                #### ⚖️ Effective Combinations
+                - **MSCI EMU (40%) + S&P 500 (40%) + EUR Bonds (20%)**: Balanced EUR-USA
+                - **MSCI EMU (60%) + MSCI World ex-EMU (30%) + Bonds (10%)**: Eurozone tilt
+                - **MSCI EMU (50%) + MSCI EM (20%) + Bonds (30%)**: Complete diversification
+                
+                #### ⚠️ Considerations
+                - **Excludes UK and Switzerland**: Removes 2 of Europe's largest markets
+                - **France-Germany concentration**: ~63% of total weight
+                - **Less tech**: Underweight in technology vs global indices
+                - **EU political risk**: Exposed to Eurozone political dynamics
+                - **For EUR investors**: Eliminates currency risk but reduces diversification
+                - **Valuations**: Generally more attractive than US markets
+                """
             }
         },
         "metrics_labels": {
@@ -611,7 +1316,12 @@ def main():
         index_options = {
             "msci_world": content["indices"]["msci_world"]["name"],
             "sp500": content["indices"]["sp500"]["name"],
-            "msci_em": content["indices"]["msci_em"]["name"]
+            "msci_em": content["indices"]["msci_em"]["name"],
+            "msci_acwi": content["indices"]["msci_acwi"]["name"],
+            "ftse_all_world": content["indices"]["ftse_all_world"]["name"],
+            "solactive_str": content["indices"]["solactive_str"]["name"],
+            "msci_europe": content["indices"]["msci_europe"]["name"],
+            "msci_emu": content["indices"]["msci_emu"]["name"]
         }
         
         selected_index = st.selectbox(
@@ -625,9 +1335,11 @@ def main():
         # Info app
         st.info(
             """
-            **AssetExpl v1.0**
+            **AssetExpl v2.0**
             
             Educational ETF Explorer
+            
+            8 Major Global Indices
             
             Developed with Streamlit
             """
